@@ -34,7 +34,7 @@ A 2nd-year Environmental Engineering student at AASTU with a passion for **AI/ML
 ## 🔥 Featured Projects
 1. **🏠 House Price Prediction Web App**  
    - Built a regression model (85% accuracy) with Flask API and interactive frontend.  
-   - **Tech:** Python, TensorFlow, HTML/CSS, JavaScript  
+   - **Tech:** Python, ML, HTML/CSS, JavaScript  
    - [Live Demo](https://ake544-bhp-app.hf.space) | [Code](https://github.com/Ake544/house-price-prediction)  
 
 ---
