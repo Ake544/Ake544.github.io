@@ -251,46 +251,47 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ offset: 0 });
+    AOS.init({ offset: 0 });
     </script>
-    <script>
 
+    <script>
+    const scrollBtn = document.querySelector(".scrollToTop-btn");
+    if (scrollBtn) {
         window.addEventListener("scroll", function () {
-            scrollBtn.classList.toggle("active", window.scrollY > 500);
+        scrollBtn.classList.toggle("active", window.scrollY > 500);
         });
 
-        //javascript for scroll back to top on click scroll-to-top button
+        scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
 
-        // document.querySelector(".scrollToTop-btn").addEventListener("click", () => {
-        //   document.body.scrollTop = 0;
-        //   document.documentElement.scrollTop = 0;
-        // });
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+    const navigationItems = document.querySelectorAll(".navigation a"); // NodeList for forEach
 
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-        const navigationItems = document.querySelector(".navigation a");
-
+    if (menuBtn && navigation) {
         menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        })
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+        });
+    }
 
-        // Navigation Effects
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (header) header.classList.toggle("sticky", window.scrollY > 0);
+    });
 
+    if (navigationItems.length) {
         navigationItems.forEach((navigationItem) => {
-            navigationItem.addEventListener("click", () => {
-                menuBtn.classList.remove("active");
-                navigation.classList.remove("active")
-            })
-        })
-
-
-
+        navigationItem.addEventListener("click", () => {
+            menuBtn.classList.remove("active");
+            navigation.classList.remove("active");
+        });
+        });
+    }
     </script>
+
 </body>
 
 </html>

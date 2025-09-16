@@ -51,7 +51,7 @@ Currently exploring:
    - A full-stack food ordering platform powered by **NLP (Dialogflow)** where users can place, manage, and track orders via natural conversation.  
    - **Features:** Chatbot ordering, Google OAuth, JWT login, order history, payment flow, admin dashboard & recipe explorer.  
    - **Tech:** FastAPI, MySQL, Dialogflow, HTML/CSS/JS, Vercel, Netlify, Render, Railway  
-   - [Live Demo](https://gursha-delivery.netlify.app) | [Alt Demo](https://gursha-food-delivery.vercel.app) | [Code](https://github.com/Ake544/gursha-food-delivery)  
+   - [Live Demo](https://gursha-food-delivery.vercel.app) | [Alt Demo](https://gursha-delivery.netlify.app) | [Code](https://github.com/Ake544/gursha-food-delivery)  
 
 ---
 
