@@ -51,7 +51,13 @@ Currently exploring:
    - A full-stack food ordering platform powered by **NLP (Dialogflow)** where users can place, manage, and track orders via natural conversation.  
    - **Features:** Chatbot ordering, Google OAuth, JWT login, order history, payment flow, admin dashboard & recipe explorer.  
    - **Tech:** FastAPI, MySQL, Dialogflow, HTML/CSS/JS, Vercel, Netlify, Render, Railway  
-   - [Live Demo](https://gursha-food-delivery.vercel.app) | [Alt Demo](https://gursha-delivery.netlify.app) | [Code](https://github.com/Ake544/gursha-food-delivery)  
+   - [Live Demo](https://gursha-food-delivery.vercel.app) | [Alt Demo](https://gursha-delivery.netlify.app) | [Code](https://github.com/Ake544/gursha-food-delivery)
+
+3. **♻️ EcoScan - AI Waste Classification System**
+   - Developed a deep learning application that classifies waste materials and estimates their value using computer vision.
+   - **Tech:** TensorFlow, FastAPI, Transfer Learning (EfficientNet), Tailwind CSS, JavaScript
+   - **Features:** 12+ material classifications, value estimation, drag-and-drop interface
+   - [Live Demo](https://eco-scan-seven.vercel.app/) | [Code](https://github.com/Ake544/EcoScan)  
 
 ---
 
