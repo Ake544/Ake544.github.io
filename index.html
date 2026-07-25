@@ -2,297 +2,770 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aklil-Portifolio</title>
-    <link rel="icon" type="image/png" href="./Image/a-logo.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aklilu Wassie - AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM_Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Ak<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Aklilu_Wassie_CV.pdf" class="nav-cta" download="Aklilu_Wassie_CV.pdf">Download CV</a>
+    <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
 
-    <header>
-        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">Ake</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a>
-            <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">About</a>
-            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Skills</a>
-            <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Services</a>
-            <a href="#work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Work</a>
-            <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <h1 class="hero-name">
+        Aklilu<br />
+        <span class="line2">Wassie.</span>
+      </h1>
+      <p class="hero-role">
+        Full-Stack AI Engineer specializing in <strong>LLM-powered applications</strong>, machine learning systems, and
+        production-ready backend APIs.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+          View My Work
+        </a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Ake544" target="_blank" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/aklilu-wassie-406496332" target="_blank" class="social-link"
+          aria-label="LinkedIn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:aklilwassie@email.com" class="social-link" aria-label="Email">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div id="stats">
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Internship Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Live Projects Deployed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Certifications Earned</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2+</div>
+        <div class="stat-label">Years of Building</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid max-w">
+      <div class="about-img-wrap fade-in">
+        <div class="about-img-outer">
+          <img src="images/ss.png" alt="Aklilu Wassie"
+            onerror="this.style.display='none';this.parentElement.querySelector('.about-img-placeholder').style.display='flex';" />
+          <div class="about-img-placeholder" style="display:none;">
+            <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span style="font-size:13px;">Photo</span>
+          </div>
         </div>
-    </header>
 
-    <section class="main" id="main">
-        <div class="content">
-            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Hello, I'm <br><span>AKlilu
-                    Wassie</span></h2>
-            <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
-                <h3>AI/ML Practitioner</h3>
-                <h3>Aspiring ML Engineer</h3>
-                <h3>Junior Data Scientist</h3>
-            </div>
-            <a href="#" class="btn" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">See My Work</a>
-            <div class="media-icons">
-                <a href="https://github.com/Ake544" target="_blank" data-aos="fade-in" data-aos-duration="1000"
-                    data-aos-delay="1500"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/aklilu-wassie-406496332" target="_blank" data-aos="fade-in"
-                    data-aos-duration="1000" data-aos-delay="1400"><i class="fab fa-linkedin"></i></a>
-            </div>
+      </div>
+      <div class="about-text fade-in">
+        <div class="section-label">About Me</div>
+
+        <h2 class="section-title">Building at the intersection of AI systems and real-world applications.</h2>
+
+        <p>
+          I'm a <strong>Full-Stack AI Engineer</strong> based in Ethiopia. I build end-to-end intelligent
+          systems that combine machine learning, backend engineering, and modern application development to deliver
+          production-ready AI products.
+        </p>
+
+        <p>
+          Over the past few years, I've built and deployed real-world AI systems including NLP chatbots,
+          retrieval-augmented generation (RAG) pipelines, computer vision models, and predictive analytics applications.
+          My work spans both model development and full application engineering using Python, FastAPI, Flask, React, and
+          React Native.
+        </p>
+
+        <p>
+          I have hands-on experience integrating LLMs, building semantic search systems with vector
+          databases like FAISS, and deploying scalable backend services with authentication, databases, and cloud
+          infrastructure. I've also worked on mobile-first AI applications with offline support and real-time features.
+        </p>
+
+        <p>
+          My engineering approach is simple: understand the problem deeply, build a working system quickly, then iterate
+          toward scalability and production readiness.
+        </p>
+
+        <div class="about-details">
+          <div class="about-detail-row">
+            <span class="about-detail-label">Location</span>
+            <span class="about-detail-value">Ethiopia</span>
+          </div>
+
+          <div class="about-detail-row">
+            <span class="about-detail-label">Focus</span>
+            <span class="about-detail-value">Full-Stack AI Systems, LLM Applications, ML Engineering,
+              Backend Development</span>
+          </div>
+
+          <div class="about-detail-row">
+            <span class="about-detail-label">Email</span>
+            <span class="about-detail-value">aklilwassie@email.com</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!--  About Section -->
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="experience-inner">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I have worked.</h2>
+      <p class="section-sub">Hands-on internships that took me from course projects to production systems.</p>
+      <div class="timeline fade-in">
 
-    <section class="about" id="about">
-        <div class="title reveal">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">About me</h2>
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <strong>Nov 2025 — May 2026</strong>
+            6 months
+          </div>
+
+          <div class="timeline-line">
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-company">Talrn — Remote(India)</div>
+              <div class="timeline-role">AI Platform Engineer Intern</div>
+
+              <div class="timeline-desc">
+                Engineered and deployed a hybrid Flask backend and a React + TypeScript single-page application (SPA)
+                driven by a
+                multi-LLM orchestration system.
+                The platform automated news aggregation, AI-assisted article generation, and media content creation
+                workflows, enabling scalable content production across multiple brands.
+              </div>
+
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">LLM Orchestration</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">AI Automation</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="content">
-            <div class="column col-left reveal">
-                <div class="img-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
-                    <img src="Image/ss.png" alt="">
-                </div>
-            </div>
-            <div class="column col-right reveal">
-                <h2 class="content-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Hey There!
-                    I am AKlilu Wassie</h2>
-                <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">Self-taught ML engineer skilled in Python’s data stack (NumPy, Pandas, Matplotlib) and building predictive models. Experienced in data cleaning, visualization, and deploying Flask/FastAPI solutions. Proficient in TensorFlow with hands-on deep learning projects, from model design to training and optimization. Strong foundation in core algorithms, with a focus on translating theory into practical, production-ready solutions. Passionate about transforming raw data into actionable insights through statistically sound and scalable approaches. Always learning, always building.<br><br>
-                </p>
-                <a href="#" class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="600">See
-                    more</a>
-            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="skills-inner">
+      <div class="section-label">Skills</div>
+
+      <h2 class="section-title">The stack I build with.</h2>
+
+      <p class="section-sub">
+        Full-stack AI systems spanning machine learning, backend engineering, LLM applications, and deployment — focused
+        on building production-ready products.
+      </p>
+
+      <div class="skills-grid fade-in">
+
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div class="skill-group-title">Machine Learning & AI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Model Optimization</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Skill Section -->
-
-    <section class="skills" id="skills">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+          </div>
+          <div class="skill-group-title">Data Science & Analysis</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Statistical Analysis</span>
+            <span class="skill-tag">Data Cleaning</span>
+          </div>
         </div>
-        <div class="content">
-            <div class="column col-left">
-                <h2 class="content-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">My Skills
-                </h2>
-                <div class="paragraph-text" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">I specialize in Python’s data science stack (NumPy, Pandas, Matplotlib) for cleaning, analyzing, and visualizing data, with hands-on experience building machine learning models using Scikit-learn and TensorFlow. I develop production-ready APIs with Flask and FastAPI, manage data with SQL, and maintain organized workflows through GitHub. I also have working knowledge of HTML, CSS, and JavaScript. Recently, I’ve expanded into deep learning with TensorFlow, exploring model optimization, computer vision, and natural language processing. Additionally, I work with deployment tools like Docker to bridge the gap between development and scalable, real-world applications.</div>
-                <a href="#" class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400">See
-                    more</a>
-            </div>
-            <div class="column col-right">
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
-                        <span>Python</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="line html" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="140"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
-                        <span>ML Modeling</span>
-                        <span>89%</span>
-                    </div>
-                    <div class="line css" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="240"></div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
-                        <span>HTML</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="line javascript" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="340">
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
-                        <span>CSS</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="line python" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="440">
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
-                        <span>JS</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="line php" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="540"></div>
-                </div>
-            </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <div class="skill-group-title">Web & API Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-
-    <section class="services" id="services">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Services</h2>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">I transform raw data into intelligent
-                solutions. Using Python’s powerful data stack and machine learning, I build custom tools that analyze
-                patterns, predict outcomes, and automate decisions—all delivered through clean APIs and actionable
-                reports.</p>
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+              <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
+            </svg>
+          </div>
+          <div class="skill-group-title">AI Systems & Deployment (MLOps)</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Hugging Face Spaces</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Model Serving</span>
+            <span class="skill-tag">Linux</span>
+          </div>
         </div>
-        <div class="content">
-            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-                <div class="info">
-                    <h3>Data Analysis & Visualization</h3>
-                    <p>Turn raw data into actionable insights with clean Python scripts using Pandas/NumPy, paired with
-                        Matplotlib/Seaborn visualizations that reveal hidden patterns. </p>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
 
-                <div class="info">
-                    <h3>Custom Machine Learning Solutions</h3>
-                    <p>Build production-ready models for Predictive analytics like sales, customer behavior
-                        and Classification systems text/image categorization. </p>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-                <div class="info">
-                    <h3>API Development for Data Products</h3>
-                    <p>
-                        Deploy your models or analytics tools as scalable web services using Flask/FastAPI. </p>
-                </div>
-            </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+          </div>
+          <div class="skill-group-title">Tools & Workflow</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter Notebooks</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Linux</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Work Section -->
-    <section class="work" id="work">
-        <div class="title">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Work</h2>
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4M12 8h.01" />
+            </svg>
+          </div>
+          <div class="skill-group-title">Currently Exploring</div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM Fine-tuning</span>
+            <span class="skill-tag">RAG Systems</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Transformers</span>
+          </div>
         </div>
-        <div class="content">
-            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="card-img">
-                    <a target="_blank" href="https://ake544-bhp-app.hf.space">
-                        <img src="Image/work1.png" alt="">
-                    </a>
 
-                </div>
-            </div>
-            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="card-img">
-                    <a target="_blank" href="https://gursha-food-delivery.vercel.app/">
-                        <img src="Image/work3.png" alt="">
-                    </a>
+        <div class="skill-group">
+          <div class="skill-group-icon">
+            <svg width="20" height="20" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="7" y="2" width="10" height="20" rx="2" />
+              <path d="M11 18h2" />
+            </svg>
+          </div>
 
-                </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="card-img">
-                    <a target="_blank" href="https://eco-scan-seven.vercel.app/">
-                        <img src="Image/work2.png" alt="">
-                    </a>
-                </div>
-            </div>
+          <div class="skill-group-title">Mobile Development</div>
 
+          <div class="skill-tags">
+            <span class="skill-tag">React Native (Expo)</span>
+            <span class="skill-tag">Mobile UI Development</span>
+            <span class="skill-tag">API Integration</span>
+          </div>
         </div>
-    </section>
-    <section class="contact" id="contact">
-        <div class="title reveal">
-            <h2 class="section-title">Contact Me</h2>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Address</h3>
-                        <span>Ethiopia</span>
-                    </div>
-                </div>
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Phone</h3>
-                        <span>+251902242427</span>
-                    </div>
-                </div>
-                <div class="card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Email Address</h3>
-                        <span>aklilwassie@email.com</span>
-                    </div>
-                </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-inner">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Things I have built and shipped.</h2>
+      <p class="section-sub">From ML-powered web apps to data dashboards — each one deployed and publicly accessible.
+      </p>
+      <div class="projects-grid fade-in">
+
+        <div class="project-card">
+          <div class="project-img proj-bg-4">
+            <div class="proj-icon">&#128137;</div>
+            <span class="project-img-label">In Progress</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-num">01</div>
+
+            <div class="project-title">TenaAI — Health Intelligence Assistant</div>
+
+            <div class="project-desc">
+              An AI-powered health assistant that helps users track glucose levels, medications, and symptoms while
+              interacting with a personalized chatbot.
+              Built with an LLM-based RAG system that provides context-aware health insights and recommendations through
+              natural conversation.
             </div>
-            <div class="row">
-                <div class="contact-form reveal">
-                    <h3>Send Message</h3>
-                    <div class="input-box">
-                        <input type="text" name="" value="" placeholder="Name">
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="" value="" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" class="send-btn" name="" value="Send">
-                    </div>
-                </div>
+
+            <div class="project-footer">
+              <div class="project-links">
+
+                <span class="project-link" style="opacity: 0.6; cursor: not-allowed;">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo
+                </span>
+
+                <a href="https://github.com/Ake544" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 1.605 0 .015-2.895.015-3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  Code
+                </a>
+
+              </div>
+
+              <div class="project-stack">
+                <span class="project-tech">
+                  FastAPI · React Native · PostgreSQL · Redis · LLMs · RAG · FAISS
+                </span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
+        <div class="project-card">
+          <div class="project-img proj-bg-1">
+            <img src="images/sites/house_price.png" alt="BHP Housing Price Predictor" />
+            <div class="proj-icon">&#127968;</div>
+            <span class="project-img-label">Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-num">02</div>
+            <div class="project-title">BHP Housing Price Predictor</div>
+            <div class="project-desc">A machine learning web app that predicts property prices based on location, size,
+              and features using a regression model trained on real estate data. Deployed as a live interactive tool on
+              HuggingFace Spaces.</div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://ake544-bhp-app.hf.space" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Ake544/Price-Prediction-Website" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  Code
+                </a>
+              </div>
+              <div class="project-stack">
+                <span class="project-tech">Python · Sklearn · Flask</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-img proj-bg-2">
+            <img src="images/sites/gursha.png" alt="Gursha Food Delivery" />
+            <div class="proj-icon">&#127869;</div>
+            <span class="project-img-label">Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-num">03</div>
+            <div class="project-title">Gursha Food Delivery</div>
+            <div class="project-desc">A full-stack food ordering platform powered by NLP (Dialogflow) where users can
+              place, manage, and track orders through natural conversation. Built with a HTML,CSS and JS frontend and
+              FastAPI
+              backend,
+              deployed on Vercel.</div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://gursha-food-delivery.vercel.app/" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Ake544/gursha-food-delivery" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  Code
+                </a>
+              </div>
+              <div class="project-stack">
+                <span class="project-tech">JS · FastAPI · Dialogueflow</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-img proj-bg-3">
+            <img src="images/sites/ecoscan.png" alt="EcoScan Waste Classifier" />
+            <div class="proj-icon">&#9851;</div>
+            <span class="project-img-label">Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-num">04</div>
+            <div class="project-title">EcoScan — Waste Classifier</div>
+            <div class="project-desc">A deep learning–powered platform that classifies waste materials and estimates
+              their value using computer vision and transfer learning. Built using a fine-tuned CNN model with a
+              lightweight
+              frontend for instant results in the browser.</div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://eco-scan-seven.vercel.app/" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Ake544/EcoScan" target="_blank" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  Code
+                </a>
+              </div>
+              <div class="project-stack">
+                <span class="project-tech">TensorFlow · CNN · JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init({ offset: 0 });
-    </script>
+      </div>
+    </div>
+  </section>
 
-    <script>
-    const scrollBtn = document.querySelector(".scrollToTop-btn");
-    if (scrollBtn) {
-        window.addEventListener("scroll", function () {
-        scrollBtn.classList.toggle("active", window.scrollY > 500);
-        });
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="certs-inner">
+      <div class="section-label">Certifications</div>
+      <h2 class="section-title">Credentials and coursework.</h2>
+      <p class="section-sub">Formal recognition of skills built through study, projects, and practice.</p>
 
-        scrollBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }
+      <div class="certs-grid fade-in" style="max-width: 1200px;">
 
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
-    const navigationItems = document.querySelectorAll(".navigation a"); // NodeList for forEach
+        <!-- Internship Certificate -->
+        <div class="cert-card">
+          <div class="cert-img">
+            <img src="images/certs/ML Internship.png" alt="Machine Learning Internship" />
+          </div>
 
-    if (menuBtn && navigation) {
-        menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-        });
-    }
+          <div class="cert-body">
+            <div class="cert-issuer-tag">Talrn</div>
+            <div class="cert-name">Machine Learning Internship</div>
+            <div class="cert-meta">
+              <span class="cert-date">Nov 2025 – May 2026</span>
+            </div>
+          </div>
+        </div>
 
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (header) header.classList.toggle("sticky", window.scrollY > 0);
-    });
+        <!-- AASTU Certificate -->
+        <div class="cert-card">
+          <div class="cert-img">
+            <img src="images/certs/ML Training Program.jpg" alt="Machine Learning Training Program" />
+          </div>
 
-    if (navigationItems.length) {
-        navigationItems.forEach((navigationItem) => {
-        navigationItem.addEventListener("click", () => {
-            menuBtn.classList.remove("active");
-            navigation.classList.remove("active");
-        });
-        });
-    }
-    </script>
+          <div class="cert-body">
+            <div class="cert-issuer-tag">AASTU</div>
+            <div class="cert-name">Machine Learning Training Program</div>
+            <div class="cert-meta">
+              <span class="cert-date">2024 / 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM AI Literacy -->
+        <div class="cert-card">
+          <div class="cert-img">
+            <img src="images/certs/AI Literacy.png" alt="AI Literacy" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer-tag">IBM SkillsBuild</div>
+            <div class="cert-name">AI Literacy</div>
+            <div class="cert-meta">
+              <span class="cert-date">Issued Jun 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM Data Literacy -->
+        <div class="cert-card">
+          <div class="cert-img">
+            <img src="images/certs/Data Literacy.png" alt="Data Literacy" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer-tag">IBM SkillsBuild</div>
+            <div class="cert-name">Data Literacy</div>
+            <div class="cert-meta">
+              <span class="cert-date">Issued Jun 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NSK AI Certificate -->
+        <div class="cert-card">
+          <div class="cert-img">
+            <img src="images/certs/NSK AI.png" alt="NSK AI Specialist Certificate" />
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer-tag">NSK AI</div>
+            <div class="cert-name">Certification of Participation</div>
+            <div class="cert-meta">
+              <span class="cert-date">Issued 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING CHATBOT -->
+  <button class="chat-fab" id="chatFab" onclick="toggleChat()" aria-label="Chat with Aklilu's AI">
+    <span class="chat-fab-notif" id="chatNotif"></span>
+    <svg id="chatFabIcon" width="24" height="24" fill="none" stroke="#0a0a0b" stroke-width="2.2" stroke-linecap="round"
+      stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+    </svg>
+  </button>
+
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-topbar">
+      <div class="chat-avatar">AW</div>
+      <div>
+        <div class="chat-name">Aklilu's AI</div>
+        <div class="chat-status">
+          <div class="chat-status-dot"></div> Online — Ask me anything
+        </div>
+      </div>
+      <button class="chat-close-btn" onclick="toggleChat()" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-suggestions-row">
+      <button class="chat-suggestion-btn" onclick="sendSuggestion('What is your strongest skill?')">Strongest
+        skill?</button>
+      <button class="chat-suggestion-btn" onclick="sendSuggestion('Are you open to remote work?')">Remote work?</button>
+      <button class="chat-suggestion-btn" onclick="sendSuggestion('What roles are you looking for?')">Ideal
+        role?</button>
+      <button class="chat-suggestion-btn" onclick="sendSuggestion('Tell me about your projects.')">Projects?</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg ai">
+        <div class="chat-bubble">Hey! I am Aklilu's AI. Ask me anything about his background, skills, projects, or
+          availability.</div>
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask anything..." />
+      <button class="chat-send" id="chatSend" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background: var(--bg2);">
+    <div class="contact-inner">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let us build something together.</h2>
+          <p style="color:var(--text2); font-size:16px; line-height:1.8; margin-bottom:8px;">
+            Whether it is a job opportunity, a freelance project, or just a conversation about ML — I am open to it. I
+            respond to every message.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+              </div>
+              <div class="contact-detail-text">
+                <label>Email</label>
+                <p>aklilwassie@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 12.09a19.79 19.79 0 01-3.07-8.67A2 2 0 011.9 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div class="contact-detail-text">
+                <label>Phone</label>
+                <p>+251 90 224 2427</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="#c8f55a" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="contact-detail-text">
+                <label>Location</label>
+                <p>Ethiopia (Remote Available)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First name</label>
+                <input type="text" class="form-input" placeholder="John" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label>Last name</label>
+                <input type="text" class="form-input" placeholder="Doe" id="lastName" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-input" placeholder="john@example.com" id="email" />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" class="form-input" placeholder="Job opportunity / Collaboration / Other"
+                id="subject" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-textarea"
+                placeholder="Tell me what you are working on or what you are looking for..." id="message"></textarea>
+            </div>
+            <button class="btn-primary" onclick="handleFormSubmit(event)" style="align-self:flex-start;">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Ak<span>.</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Ake544" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/aklilu-wassie-406496332" target="_blank">LinkedIn</a>
+        <a href="mailto:aklilwassie@email.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
