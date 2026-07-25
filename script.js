@@ -5,7 +5,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 /* ── CONFIG ─────────────────────────────────────────────────── */
-const API_BASE_URL = 'https://YOUR_RENDER_URL.onrender.com';
+const API_BASE_URL = 'https://aklilu-portfolio-api.onrender.com';
 
 /* ── FLOATING CHAT ──────────────────────────────────────────── */
 let chatOpen = false;
