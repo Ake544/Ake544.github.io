@@ -56,5 +56,5 @@ Message:
     else:
         return ContactResponse(
             status="received",
-            detail="Email not configured, but message was received. Contact Aklilu directly at aklilwassie@email.com."
+            detail="Your message was received! Aklilu will get back to you. For a faster response, email him directly at aklilwassie@email.com."
         )

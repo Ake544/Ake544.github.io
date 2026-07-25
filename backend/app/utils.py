@@ -94,8 +94,8 @@ def send_email(to_email: str, subject: str, body: str) -> bool:
     except smtplib.SMTPAuthenticationError:
         print("[Email] Authentication failed — check your App Password")
         return False
-    except TimeoutError:
-        print("[Email] Connection timed out — Gmail SMTP may be blocked on this network")
+    except (TimeoutError, OSError) as e:
+        print(f"[Email] Network error (Render free tier blocks SMTP): {e}")
         return False
     except Exception as e:
         print(f"[Email] Failed: {e}")
