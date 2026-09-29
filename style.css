@@ -1478,6 +1478,10 @@ footer {
     background: linear-gradient(135deg, #111113 0%, #1f1a1a 100%);
 }
 
+.proj-bg-4 {
+    background: linear-gradient(135deg, #111113 0%, #1a171f 100%);
+}
+
 .proj-icon {
     font-size: 48px;
     opacity: 0.2;
